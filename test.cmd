@@ -1,5 +1,6 @@
-@Echo off 
+@Echo off
 ver
-cls
+::cls
+help
 
-dir 
+VER

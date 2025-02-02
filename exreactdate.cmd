@@ -1,22 +1,23 @@
 @echo off
-:: IT HIDE THE COMMAND EXECUTION FROM IN THE COMMNAD PROMPT
+setlocal enabledelayedexpansion
 
-
-::EXRACT THE DATE MONTH YEAR FROM DD/MM/YEAR
-%%
+:: Extract the day, month, and year from the system date
 for /f "tokens=1-3 delims=/" %%a in ("%date%") do (
- set "day=%%a"
- set "month=%%b"
- set "year=%%c"
-
+    set "day=%%a"
+    set "month=%%b"
+    set "year=%%c"
 )
 
+:: Print extracted values
+echo Day: !day!
+echo Month: !month!
+echo Year: !year!
+
+:: Format the date as YYYY-MM-DD
 set "formatted_date=!year!-!month!-!day!"
 
-:: Print the date
-echo Today's date is !formatted_date!
+:: Print formatted date
+echo Formatted Date: !formatted_date!
 
 endlocal
 exit
-
-
