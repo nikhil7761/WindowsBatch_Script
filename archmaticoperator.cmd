@@ -11,3 +11,7 @@ ECHO %SUB%
 
 SET /A mul=12*18
 ECHO %mul%
+
+
+SET /A div=9/4
+ECHO %div%
