@@ -7,3 +7,8 @@ To create the varible we are used the SET command
 3.CLS (used fot the clear the screeen)
 4.ECHO(TO print the string)
 5.ECHO%variable%(To print the Variable)
+
+
+# Archthmatic Operator in the Batch Script
+
+1. SET /A sum=12+12
